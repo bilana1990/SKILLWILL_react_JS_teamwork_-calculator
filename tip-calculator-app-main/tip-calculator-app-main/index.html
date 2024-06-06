@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+    
+</head>
+<body>
+    <div class="white-card">
+        <div class="card-content">
+            <label for="bill">Bill Amount:</label>
+            <input id="bill" type="number" placeholder="$Enter bill amount">
+
+            <label>Tip Percentage:</label>
+            <div>
+                <button class="tip-button" type="button" onclick="setTip(5)">5%</button>
+                <button class="tip-button" type="button" onclick="setTip(10)">10%</button>
+                <button class="tip-button" type="button" onclick="setTip(15)">15%</button>
+                <button class="tip-button" type="button" onclick="setTip(25)">25%</button>
+                <button class="tip-button" type="button" onclick="setTip(50)">50%</button>
+            </div>
+
+            <label for="num-of-people">Number of People:</label>
+            <input id="num-of-people" type="number" placeholder="Enter number of people">
+
+            <input id="tip-percentage" type="hidden">
+
+            <button class="calculate-button" type="button" onclick="calculateTip()">Calculate Tip</button>
+        </div>
+        <div class="blue-card">
+            <div id="result">
+                <p>Tip Amount per person: $0</p>
+                <p>Total Amount per person: $0</p>
+            </div>
+            <button class="reset">reset</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
