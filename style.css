@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(4, 149, 144);
+}
+.main_screen {
+  width: 900px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+}
+.left_screen {
+  width: 50%;
+}
+.left_screen h2 {
+  padding-left: 100px;
+  padding-top: 50px;
+  font-size: 15px;
+}
+.left_screen input {
+  margin-left: 100px;
+  height: 40px;
+  padding-left: 280px;
+  width: 320px;
+  margin-top: 10px;
+  background-color: rgb(186, 250, 247);
+  color: black;
+  border: transparent;
+}
+
+.select_tip h2 {
+  font-size: 15px;
+  margin-top: -30px;
+}
+.select_tip .all_tips {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  gap: 10px;
+  margin-top: 20px;
+}
+.select_tip .all_tips .tip_btn {
+  border: 1px solid rgb(4, 149, 144);
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 10%;
+  padding-top: 5px;
+  border-radius: 5px;
+  background-color: rgb(4, 149, 144);
+  color: white;
+  cursor: pointer;
+}
+.select_tip .all_tips :nth-child(6) {
+  background-color: rgb(186, 250, 247);
+  font-size: 20px;
+  color: black;
+  padding-left: 5%;
+  border: 1px solid rgb(186, 250, 247);
+}
+.fa {
+  margin-left: 120px;
+  margin-top: 15px;
+  position: absolute;
+  color: grey;
+}
+
+.right_screen {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(4, 149, 144);
+  margin-top: 50px;
+  border-radius: 30px;
+}
+.right_screen form {
+  display: flex;
+  gap: 30px;
+}
+.right_screen form label {
+  margin-left: 30px;
+  margin-top: 50px;
+  color: white;
+}
+.right_screen form input {
+  margin-top: 40px;
+  height: 50px;
+  font-size: 30px;
+  width: 200px;
+  padding-left: 100px;
+  color: green;
+  background-color: rgb(4, 149, 144);
+  border: transparent;
+}
+::placeholder {
+  color: green;
+  /* opacity: 1; Firefox */
+}
+
+#total_person input {
+  margin-left: 40px;
+}
+
+#reset_btn {
+  width: 350px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 30px;
+  background-color: rgb(3, 99, 96);
+  border: transparent;
+  cursor: pointer;
+}
