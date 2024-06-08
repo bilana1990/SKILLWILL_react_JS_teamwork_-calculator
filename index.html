@@ -20,7 +20,7 @@
         <form action="" id="calculate_bill">
           <h2>Bill</h2>
           <i style="font-size: 24px" class="fa">&#xf155;</i>
-          <input type="number" placeholder="0" />
+          <input id="bill" type="number" placeholder="0" />
         </form>
         <div class="select_tip">
           <h2>Select Tip %</h2>
@@ -35,24 +35,26 @@
           <form action="" id="Number_of_people">
             <h2>Numbern of People</h2>
             <i style="font-size: 24px" class="fa">&#xf007;</i>
-            <input type="number" placeholder="0" />
+            <input id="number_of_people" type="number" placeholder="0" />
           </form>
         </div>
       </div>
 
       <div class="right_screen">
-        <form action="" id="tip_acount">
+        <form action="">
           <label for="">Tip Acount/<span>person</span></label>
-          <input type="text" placeholder="$0.00" />
+          <input id="tip_account" type="text" placeholder="$0.00" />
         </form>
 
-        <form action="" id="total_person">
+        <form action="">
           <label for="">Total/<span>person</span></label>
-          <input type="text" placeholder="$0.00" />
+          <input id="total_person" type="text" placeholder="$0.00" />
         </form>
 
-        <button id="reset_btn" disabled>RESET</button>
+        <button id="reset_btn">RESET</button>
       </div>
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>

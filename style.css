@@ -60,6 +60,10 @@ body {
   color: white;
   cursor: pointer;
 }
+.select_tip .all_tips .tip_btn:hover {
+  background-color: aqua;
+  transition: 0.5s;
+}
 .select_tip .all_tips :nth-child(6) {
   background-color: rgb(186, 250, 247);
   font-size: 20px;
@@ -117,4 +121,8 @@ body {
   background-color: rgb(3, 99, 96);
   border: transparent;
   cursor: pointer;
+}
+#reset_btn:hover {
+  background-color: aqua;
+  transition: 0.5s;
 }
