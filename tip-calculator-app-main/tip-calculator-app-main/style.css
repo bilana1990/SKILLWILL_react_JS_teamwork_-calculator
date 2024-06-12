@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Strong-cyan-alpha: hsla(172, 67%, 45%, 0.103);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Very-dark-cyan-alpha: hsla(183, 100%, 15%, 0.603);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size-form-input: 2.4rem;
+    --Padding-form-input: .8rem 1rem;
+    --Font-family-spacemono: "Space Mono", monospace;
+}
+
+body {
+    font-family: var(--Font-family-spacemono);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--Light-grayish-cyan);
+    padding: 5rem 0;
+}
+
+fieldset {
+    border: none;
+}
+
+.white-card {
+    width: 70%;
+    height: 45rem;
+    margin-top: 8rem;
+    background: var(--White);
+    padding: 3.5rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 1rem;
+}
+
+.card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content label {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--Very-dark-cyan);
+}
+
+.card-content input[type="number"] {
+    width: 100%;
+    font-size: var(--Font-size-form-input);
+    padding: var(--Padding-form-input);
+    background: var(--Strong-cyan-alpha);
+    color: var(--Dark-grayish-cyan);
+    text-align: right;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: .5rem;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+
+.card-content .tip-button {
+    width: auto;
+    font-size: var(--Font-size-form-input);
+    padding: var(--Padding-form-input);
+    background: var(--Strong-cyan-alpha);
+    color: var(--Dark-grayish-cyan);
+    text-align: center;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: .5rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-content .tip-button:hover {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+.blue-card {
+    height: 100%;
+    background: var(--Very-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.5rem;
+    border-radius: 1rem;
+}
+
+.blue-card #result {
+    margin-bottom: 3.5rem;
+}
+
+.blue-card p {
+    font-size: 1.6rem;
+    color: var(--White);
+}
+
+.blue-card p:last-child {
+    margin-top: 1rem;
+}
+
+.calculate-button {
+    border: none;
+    outline: none;
+    background: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculate-button:hover {
+    background: var(--Light-grayish-cyan);
+}
+
+.calculate-button:disabled {
+    background: var(--Dark-grayish-cyan);
+    cursor: not-allowed;
+}
+
+
+
+.reset {
+    border: none;
+    outline: none;
+    background: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset:hover {
+    background: var(--Light-grayish-cyan);
+}
+
+.reset:disabled {
+    background: var(--Dark-grayish-cyan);
+    cursor: not-allowed;
+}
+
+
+.blue-card #result p {
+            font-size: 3.6rem;
+            color: var(--Strong-cyan);
+            margin-bottom: 1.5rem;
+        }
